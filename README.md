@@ -8,8 +8,8 @@ Ele vai gerar esse botão theme onde você poderá alternar o tema do whatsApp d
 # Como adicionar?
 
 Vá em chrome://extensions/ , ative a opção no canto direito superior de desenvolvedor e araste a pasta da extensão no painel! 
-# pronto! É só atualizar o WhatsApp e já verá o botão!
+pronto! É só atualizar o WhatsApp e já verá o botão!
 
-# Tecnologias Usadas:
+Tecnologias Usadas:
   Javascript , CSS
   Só funciona no watsApp web
