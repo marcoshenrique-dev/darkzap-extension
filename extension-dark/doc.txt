@@ -1,0 +1,2 @@
+#document.querySelector("body").classList.add("dark"); adiciona
+document.querySelector("body").classList.remove("dark"); remove
