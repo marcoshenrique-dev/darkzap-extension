@@ -1,37 +1,49 @@
+/*
+    Autor : Marcos Henrique
+    Links úteis : https://linktr.ee/robotica_e_desafios
+    Canal : Robótica e desafios
+    
+*/
 
-var counter = false;
 
-const interval = setInterval(() => {
+var counter = false; //Variável que define em que modo o usuário vai estar
 
-  const header = document.querySelector("._3auIg");
+const interval = setInterval(() => { //intervalo de tempo de validação
 
-  if(header){
+  const header = document.querySelector("._3auIg"); //busca o cabeçalho
 
-      console.log(header);
-      clearInterval(interval);
+  if(header){ //se existir ...
 
-      const button = document.createElement("button");
-      button.innerHTML = "Theme";
-      button.classList.add("darkMode");
+      console.log(header);//debug
+      clearInterval(interval);//acaba com o intervalo
 
-      button.addEventListener("click" , () => {
+      const button = document.createElement("button"); //cria um novo elemento
+    
+      button.innerHTML = "Theme"; //defini o texto do botão
+    
+      button.classList.add("darkMode");//adiciona uma class darkMode ao botão
 
-        if(counter == false) {
+      button.addEventListener("click" , () => { //Quando o evento click ocorrer ...
 
-          document.querySelector("body").classList.add("dark");
-          counter = true;
-        }else {
+        if(counter == false) { //se o usuário está com tema light
+
+          document.querySelector("body").classList.add("dark"); //adiciona a class dark
           
-          document.querySelector("body").classList.remove("dark");
-          counter = false;
+          counter = true; // e seta para próxima validação que o tema atual é dark
+          
+        }else { //se não
+          
+          document.querySelector("body").classList.remove("dark"); //Remove a class dark , deixando o tema branco
+          
+          counter = false; // e seta para próxima validação que o tema atual é light
         }
        
 
       });
 
-      header.appendChild(button);
+      header.appendChild(button); //cria o botão no cabeçalho
   }
-}, 1000);
+}, 1000); //define o tempo do loop
 
-
+// -------------------------------------  Fim do Código  -------------------------------------------------
 
