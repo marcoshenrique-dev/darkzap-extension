@@ -1,4 +1,0 @@
-#document.querySelector("body").classList.add("dark"); adiciona
-#document.querySelector("body").classList.remove("dark"); remove
-
-Doc para consulta sobre função de adicionar e remover classes no javascript
